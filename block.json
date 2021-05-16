@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "oik-sb/sb-starting-block",
+	"title": "Starting block",
+	"category": "widgets",
+	"icon": "megaphone",
+	"description": "Starting Server Side Rendered block",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "sb-starting-block",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
