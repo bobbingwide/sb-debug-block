@@ -1,14 +1,14 @@
 {
 	"apiVersion": 2,
-	"name": "oik-sb/sb-starting-block",
-	"title": "Starting block",
+	"name": "oik-sb/sb-debug-block",
+	"title": "Debug block",
 	"category": "widgets",
-	"icon": "megaphone",
-	"description": "Starting Server Side Rendered block",
+	"icon": "code-standards",
+	"description": "Debug Server Side Rendered block",
 	"supports": {
 		"html": false
 	},
-	"textdomain": "sb-starting-block",
+	"textdomain": "sb-debug-block",
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"

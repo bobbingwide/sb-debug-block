@@ -25,7 +25,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/developers/block-api/#registering-a-block
  */
-registerBlockType( 'oik-sb/sb-starting-block', {
+registerBlockType( 'oik-sb/sb-debug-block', {
 	/**
 	 * @see ./edit.js
 	 */

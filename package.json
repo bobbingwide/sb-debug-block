@@ -1,7 +1,7 @@
 {
-	"name": "sb-starting-block",
+	"name": "sb-debug-block",
 	"version": "0.0.0",
-	"description": "Starting Server Side Rendered Block",
+	"description": "Debug Server Side Rendered Block",
 	"author": "bobbingwide",
 	"license": "GPLv3",
 	"main": "build/index.js",
@@ -13,9 +13,9 @@
 		"start": "wp-scripts start",
 		"packages-update": "wp-scripts packages-update",
 		"dev": "wp-scripts start",
-		"makepot": "wp i18n make-pot . languages/sb-starting-block.pot --exclude=node_modules,vendor,src",
+		"makepot": "wp i18n make-pot . languages/sb-debug-block.pot --exclude=node_modules,vendor,src",
 		"makejson": "wp i18n make-json languages --no-purge",
-		"l10n": "l10n sb-starting-block"
+		"l10n": "l10n sb-debug-block"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^5.3.3",

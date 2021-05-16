@@ -1,7 +1,7 @@
 <?php
 /**
- * Plugin Name:       Starting block
- * Description:       Starting point for a single block server side rendered block
+ * Plugin Name:       Debug block
+ * Description:       Debug point for a single block server side rendered block
  * Requires at least: 5.7
  * Requires PHP:      7.3
  * Version:           0.0.0
@@ -20,13 +20,13 @@
  *
  * @see https://developer.wordpress.org/block-editor/tutorials/block-tutorial/writing-your-first-block-type/
  */
-function oik_sb_sb_starting_block_block_init() {
-	$args = [ 'render_callback' => 'oik_sb_sb_starting_block_dynamic_block'];
+function oik_sb_sb_debug_block_block_init() {
+	$args = [ 'render_callback' => 'oik_sb_sb_debug_block_dynamic_block'];
 	register_block_type_from_metadata( __DIR__, $args );
 }
 
-function oik_sb_sb_starting_block_loaded() {
-	add_action( 'init', 'oik_sb_sb_starting_block_block_init' );
+function oik_sb_sb_debug_block_loaded() {
+	add_action( 'init', 'oik_sb_sb_debug_block_block_init' );
 }
 /**
  * Implements post-edit block.
@@ -39,16 +39,16 @@ function oik_sb_sb_starting_block_loaded() {
  *
  * @return string
  */
-function oik_sb_sb_starting_block_dynamic_block( $attributes ) {
+function oik_sb_sb_debug_block_dynamic_block( $attributes ) {
 	$classes = '';
 	if ( isset( $attributes['textAlign'] ) ) {
 		$classes .= 'has-text-align-' . $attributes['textAlign'];
 	}
 	$wrapper_attributes = get_block_wrapper_attributes( array( 'class' => $classes ) );
-	$content = __( 'Starting block.', 'sb-starting-block');
+	$content = __( 'Debug block.', 'sb-starting-block');
 	$html = sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $content );
-	// 	$html=\oik\oik_blocks\oik_blocks_check_server_func( "shortcodes/starting-block.php", "sb-starting-block", "oik_sb_sb_starting_block" );
+	// 	$html=\oik\oik_blocks\oik_blocks_check_server_func( "shortcodes/starting-block.php", "sb-starting-block", "oik_sb_sb_debug_block" );
 	return $html;
 }
 
-oik_sb_sb_starting_block_loaded();
+oik_sb_sb_debug_block_loaded();

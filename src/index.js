@@ -1,1 +1,1 @@
-import './starting-block';
+import './debug-block';
