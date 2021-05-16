@@ -3,8 +3,12 @@
 	"version": "0.0.0",
 	"description": "Debug Server Side Rendered Block",
 	"author": "bobbingwide",
-	"license": "GPLv3",
+	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/bobbingwide/sb-debug-block.git"
+	},
 	"scripts": {
 		"build": "wp-scripts build",
 		"format": "wp-scripts format",
