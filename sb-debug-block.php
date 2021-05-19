@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Debug block
- * Description:       Debug point for a single block server side rendered block
+ * Description:       Debug block for a single block server side rendered block
  * Requires at least: 5.7
  * Requires PHP:      7.3
  * Version:           0.0.0
