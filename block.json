@@ -9,6 +9,14 @@
 		"html": false
 	},
 	"textdomain": "sb-debug-block",
+  	"attributes": {
+		"debug": {
+	  		"type": "string"
+		},
+		"showContents": {
+	  		"type": "boolean"
+		}
+  },
 	"editorScript": "file:./build/index.js",
 	"editorStyle": "file:./build/index.css",
 	"style": "file:./build/style-index.css"
