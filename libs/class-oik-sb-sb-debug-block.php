@@ -55,8 +55,8 @@ class Oik_sb_sb_debug_block {
 		 * How do we decide which bits to render?
 		 * Is it OK to apparently render the block multiple times?
 		 */
-
 		$html = $this->render_template_name();
+
 		$html .= $this->render_template_part_name();
 
 		$html .=sprintf( '<div %1$s>%2$s</div>', $wrapper_attributes, $this->content );
@@ -153,13 +153,19 @@ class Oik_sb_sb_debug_block {
 	/**
 	 * Template parts may be nested.
 	 *
-	 * Can we debug entry and exit?
+	 * Only renders the html if the template part name is set.
+	 *
+	 * @TODO Can we debug entry and exit?
+	 *
 	 * @return string
 	 */
 	function render_template_part_name() {
 		$html = null;
-		$template_part_name=$this->get_template_part_name();
-		$html =$this->wrap_debug( $template_part_name, 'template-part' );
+		//$template_part_name = "template part?";
+		$template_part_name =$this->get_template_part_name();
+		if ( $template_part_name ) {
+			$html = $this->wrap_debug($template_part_name, 'template-part');
+		}
 		return $html;
 	}
 
