@@ -10,7 +10,7 @@
 
 }
 
-div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.WP_DEBUG:first-of-type {
+div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.template:first-of-type {
   background-color: white;
   position: absolute;
   top: 0;
@@ -25,7 +25,7 @@ div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.WP_DEBUG:first-of-type {
   padding: 0 1em;
 }
 
-div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.WP_DEBUG:first-of-type:hover {
+div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.template:first-of-type:hover {
   position: absolute;
   z-index: 100000;
   padding: 0 1em;
@@ -38,8 +38,9 @@ div.wp-site-blocks > div.wp-block-oik-sb-sb-debug-block.WP_DEBUG:first-of-type:h
 /*
 Styling for blocks with class="WP_DEBUG"
  */
-div.wp-block-oik-sb-sb-debug-block { height: 1px;
-  border-top: 1px dotted red;
+div.wp-block-oik-sb-sb-debug-block.template-part { height: 1px;
+  border-top: 1px dashed blue;
+  border-bottom: 1px solid green;
   width: 100%;
   overflow: hidden;
   position: relative;
